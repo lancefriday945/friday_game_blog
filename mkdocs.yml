@@ -1,0 +1,38 @@
+site_name: Friday Game Blog
+repo_name: friday_game_blog
+repo_url: https://github.com/lancefriday945/friday_game_blog.git
+site_description: Site to share experiences in board gaming
+theme:
+  name: material
+  logo: 'meeple.png'
+  favicon: 'meeple.png'
+  palette:
+    primary: 'teal'
+    accent: 'deep orange'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+
+strict: true
+markdown_extensions:
+- admonition
+- footnotes
+- pymdownx.superfences
+- pymdownx.details
+- toc:
+    permalink: true
+- markdown_include.include:
+    base_path: includes
+- codehilite:
+    linenums: false
+- pymdownx.emoji:
+    emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    options:
+      attributes:
+        width: 25px
+
+nav:
+- Home: index.md
+
+- Conventions:
+  - Ding Dong Con 2019: cons/ddc_2019.md
